@@ -12,12 +12,20 @@ public class Block {
     
     public double mass;
     public double acceleration;
-    public double force;
+    public double friction;
 
-    public Block(double mass, double acceleration, double force) {
+    public Block(double mass, double acceleration, double friction) {
         this.mass = mass;
         this.acceleration = acceleration;
-        this.force = force;
+        this.friction = friction;
+    }
+
+    public double getFriction() {
+        return friction;
+    }
+
+    public void setFriction(double friction) {
+        this.friction = friction;
     }
 
     public double getMass() {
@@ -28,10 +36,6 @@ public class Block {
         return acceleration;
     }
 
-    public double getForce() {
-        return force;
-    }
-
     public void setMass(double mass) {
         this.mass = mass;
     }
@@ -40,9 +44,6 @@ public class Block {
         this.acceleration = acceleration;
     }
 
-    public void setForce(double force) {
-        this.force = force;
-    }
     
 
 }
